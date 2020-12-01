@@ -46,6 +46,7 @@
             this.filmsListView.TabIndex = 0;
             this.filmsListView.UseCompatibleStateImageBehavior = false;
             this.filmsListView.View = System.Windows.Forms.View.List;
+            this.filmsListView.SelectedIndexChanged += new System.EventHandler(this.filmsListView_SelectedIndexChanged);
             // 
             // categoryComboBox
             // 

@@ -95,6 +95,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilmDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmDetailForm.Designer.cs">
+      <DependentUpon>FilmDetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FilmModel.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -104,6 +110,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FilmDetailForm.resx">
+      <DependentUpon>FilmDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

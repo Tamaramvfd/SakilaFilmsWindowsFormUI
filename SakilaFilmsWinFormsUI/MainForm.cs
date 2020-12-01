@@ -130,5 +130,14 @@ namespace SakilaFilmsWinFormsUI
             nextButton.Enabled = true;
             UpdateFilmsView();
         }
+
+        private void filmsListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string filmSelected = filmsListView.SelectedItems[0].Text;
+            int filmId = int.Parse(filmSelected.Split(',')[0]);
+
+            FilmDetailForm filmDetailForm = new FilmDetailForm(filmId);
+            filmDetailForm.ShowDialog();
+        }
     }    
 }
